@@ -1,6 +1,6 @@
 {
 	"name": "adventure-creator",
-	"version": "1.0",
+	"version": "1.0.0",
 	"description": "A simple form to input adventures to the database for bot utilization",
 	"main": "index.js",
 	"scripts": {
