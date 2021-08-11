@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>Database Form</title>
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/Contact-Form-Clean.css" />
+		<link rel="stylesheet" href="assets/css/Login-Form-Dark.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+
+	<body>
+		<section class="contact-clean">
+			<form method="post" action="/add">
+				<h2 class="text-center">Adventure Creator</h2>
+				<div class="form-group">
+					<input
+						class="shadow-sm form-control"
+						type="text"
+						name="name"
+						placeholder="Adventure Name"
+						autocomplete="off"
+						autofocus=""
+						required=""
+						style="border-radius: 8px"
+					/>
+				</div>
+				<div class="form-group">
+					<textarea
+						class="shadow-sm form-control"
+						name="description"
+						placeholder="Description for the adventure"
+						rows="14"
+						autocomplete="off"
+						spellcheck="true"
+						required=""
+						style="border-radius: 13px"
+					></textarea>
+				</div>
+				<div class="form-group">
+					<label>Requirements</label
+					><input
+						class="shadow-sm form-control"
+						type="number"
+						required=""
+						placeholder="Level"
+						name="level"
+						style="
+							border-bottom-color: var(--light);
+							border-top-left-radius: 10px;
+							border-top-right-radius: 10px;
+						"
+						min="1"
+						max="200"
+					/><input
+						class="shadow-sm form-control"
+						type="number"
+						required=""
+						placeholder="Time (In seconds)"
+						name="time"
+						style="
+							border-top-color: var(--light);
+							border-bottom-right-radius: 10px;
+							border-bottom-left-radius: 10px;
+						"
+						min="360"
+						max="259200"
+					/>
+				</div>
+				<div class="form-group">
+					<label>Reward</label
+					><input
+						class="shadow-sm form-control"
+						type="number"
+						required=""
+						placeholder="Money"
+						name="money"
+						style="
+							border-bottom-color: var(--light);
+							border-top-left-radius: 10px;
+							border-top-right-radius: 10px;
+						"
+						min="2"
+						max="999999"
+					/><input
+						class="shadow-sm form-control"
+						type="number"
+						required=""
+						placeholder="XP"
+						name="xp"
+						style="
+							border-top-color: var(--light);
+							border-bottom-right-radius: 10px;
+							border-bottom-left-radius: 10px;
+						"
+						min="100"
+						max="1000000"
+					/>
+				</div>
+				<div class="form-group">
+					<input
+						class="shadow form-control"
+						type="url"
+						required=""
+						name="url"
+						placeholder="Image Url (must have an https:// and must end with a jpg or png)"
+						autocomplete="off"
+					/>
+				</div>
+				<div class="form-group">
+					<button class="btn btn-primary" type="submit">send</button>
+				</div>
+			</form>
+		</section>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

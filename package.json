@@ -1,0 +1,32 @@
+{
+	"name": "adventure-creator",
+	"version": "1.0",
+	"description": "A simple form to input adventures to the database for bot utilization",
+	"main": "index.js",
+	"scripts": {
+		"start": "node src/index.js",
+		"dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
+		"test": "env-cmd -f ./config/test.env jest --watch"
+	},
+	"jest": {
+		"testEnvironment": "Node"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/Clupai8o0/Adventure-Creator.git"
+	},
+	"author": "Clupai8o0",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Clupai8o0/Adventure-Creator/issues"
+	},
+	"homepage": "https://github.com/Clupai8o0/Adventure-Creator#readme",
+	"devDependencies": {
+		"env-cmd": "^10.1.0",
+		"jest": "^27.0.6"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongodb": "^4.1.0"
+	}
+}
